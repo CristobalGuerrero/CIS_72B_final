@@ -1,0 +1,178 @@
+/* Common Styles for all pages of Asgard Inn Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by _______________________ <----  YOUR NAME HERE */
+
+
+
+/* 1. Page Styles: On the body you must at least set color, background, margin, padding, font, and font size.    
+   ==============  You can also set styles on the page wrapper div here if you like.  */
+
+
+/*background image from http://images.free-extras.com/pics/g/grass-603.jpg*/
+body {
+	width:80%;
+	background-image:url(grass.jpeg);
+	color: black;
+	background-color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight:bold;
+}
+/*body background from: http://www.bouletfermat.com/backgrounds/kodak_leather_scaled_1600x1200.jpg*/
+#pagewrap{
+	background-color: blue;
+	background:url(dragon.jpeg);
+	color:white;
+	background-color: white;
+}
+
+#pagewrap#testimonials{
+	color:black;
+}
+
+#pagewrap p {
+	padding:0 10px 0 10px;
+}
+
+/* 2. Heading Styles: For h1-h3, set font-family and color (for all), set font-size (for each) using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   */
+
+h1 {
+	background: orange url(night.jpg) no-repeat top center;
+	margin:10px 0 0 0;
+	height:125px;
+	color:green;
+}
+
+h2 {
+	margin:0 0 0 20px;
+}
+
+/* 3. First Paragraph Styles:  use at least 3 properties to emphasize 1st paragraph  
+   =========================   */
+
+#intro {
+	font-weight: bold;
+	border: solid 1px white;
+	text-align:center;
+	font: 18px Copperplate, Impact, fantasy;
+ }
+  
+/* 4. Copyright Styles:  use at least 3 properties to de-emphasize the copyright paragraph   
+   ===================  */
+
+#copyright {
+	background-color:gray;
+	color:black;
+	border-style:solid;
+	text-align:center;
+	font:12px 'Berlin Sans FB Demi',arial,'Franklin Gothic Medium Cond',sans-serif;
+}
+
+/* 5. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write rules to affect all 4 link states.  */
+
+a:link, a:visited { 
+	color: #999900; 
+}
+
+a:hover, a:active {
+	 color: olive; 
+	 text-decoration: underline overline; 
+}
+
+/* 6. Navigation Bar Styles: Should affect only the nav bar links. Style nav bar's div, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                            Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */ 
+
+.first {
+	border-left-style:solid;
+}
+
+.last {
+	border-right-style:solid;
+	padding-right:2em;
+}
+
+#nav ul li {
+	display:inline;
+	margin:0 5px 0 0;
+	border-style:solid;
+	text-align:center;
+	padding:0 2em 0 2em;
+}
+
+/* 7. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+
+#nav ul li {
+	list-style-type:none;
+	list-style-image:none;
+}
+
+/*brionac image from http://display.asiasoft.co.th/ro/_system/RoGuild/images/items/icon/brionac2.gif*/
+ul li{
+  list-style-image: url(brionac.gif);
+}
+
+/*Gold coin image from http://images4.wikia.nocookie.net/__cb20080225053926/sealonline/images/b/b0/Gold_Coin.gif*/
+ul li ul li{
+  list-style-type:none;
+  list-style-image:url(gold-coin.gif);
+}
+
+/* 8. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonial container div,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Make speaker name appear on its own line. 
+                          Goals: Uniquely style testimonial section itself, emphasize quote, de-emphasize speaker name.   */
+
+/*scroll background image from http://www.rhymemaker.co.uk/Speeches%20example%20menu.htm*/
+#testimonials {
+	border: 1px dotted;
+	background:url(scroll.jpg);
+	color:black;
+	padding: 10px 15px;
+	width: 300px;
+	margin-top: 50px;
+}
+
+.testimonials {
+	font-weight:bold;
+}
+
+.quote {
+	font:15px 'New York',Times,'Times New Roman',serif;
+	font-weight:bold;
+}
+
+.speaker {
+	display:block;
+	font:12px 'New York',Times,'Times New Roman',serif;
+}
+
+/* 9. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing div at the
+   ==========================  bottom of each page and use styles to place it toward the top portion the page somewhere.  */
+
+#positionme{
+	position:absolute;
+	top:10px;
+	right:15px;
+}
+   
+/* 10. Multi-Column Layout Styles: Use of float, position, margin. and padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     */
+
+#pagewrap {
+	margin-left: 125px;
+}
+
+#testimonials {
+	position: absolute;
+	top: 80px;
+	right: 15px;
+	width:150px;
+}
+
+
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.             */
